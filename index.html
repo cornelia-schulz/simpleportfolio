@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Simple Portfolio Page</title>
+    <meta name="description" content="I quite simply love photography.">
+
+    <!-- Viewport mobile -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <link rel="stylesheet" href="css/jquery.lazyload.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <nav class="home">
+        <a href="#home" class="selected">Cornelia Schulz</a>
+    </nav>
+    <nav class="photography">
+        <a href="#photography">Photography</a>
+    </nav>
+    <nav class="timelapse">
+        <a href="#timelapse">Timelapse</a>
+    </nav>
+    <nav class="info">
+        <a href="#info">Contact Me</a>
+    </nav>
+<main>
+    <section class="activeSection" id="home">
+        <div class="bgSection" style="background-image: url('images/tekapo-small.jpg');"></div>
+        <article class="pageDescription">
+            <div>
+                <h1>I AM A HOBBY PHOTOGRAPHER <br/>& <br/>FRONTEND DEVELOPER</h1>
+            </div>
+        </article>
+        <article class="plainText">
+            <p>
+                Quite simply, I just love taking photos. Blending this with my fascination with the natural world provides me with heaps of inspiration.
+            </p>
+        </article>
+    </section>
+
+    <section id="photography">
+        <div class="bgSection" style="background-image: url('images/tekapo-small.jpg');"></div>
+        <article class="pageDescription">
+            <div>
+                <h1>I TAKE PICTURES</h1>
+                <h2>Scroll to discover</h2>
+            </div>
+        </article>
+        <article class="projectContent">
+            <img class="lazy" data-original="images/tekapo-small.jpg" src="images/tekapo-small.jpg" alt="Lake Tekapo" style="display: block;">
+        </article>
+        <article class="projectContent">
+            <img class="lazy" data-original="images/tekapo-small.jpg" src="images/tekapo-small.jpg" alt="Lake Tekapo" style="display: block;">
+        </article>
+        <article class="projectContent">
+            <img class="lazy" data-original="images/tekapo-small.jpg" src="images/tekapo-small.jpg" alt="Lake Tekapo" style="display: block;">
+        </article>
+        <article class="projectContent">
+            <img class="lazy" data-original="images/tekapo-small.jpg" src="images/tekapo-small.jpg" alt="Lake Tekapo" style="display: block;">
+        </article>
+        <article class="projectContent">
+            <img class="lazy" data-original="images/tekapo-small.jpg" src="images/tekapo-small.jpg" alt="Lake Tekapo" style="display: block;">
+        </article>
+    </section>
+
+    <section id="timelapse">
+        <div class="bgSection" style="background-image: url('images/tekapo-small.jpg');"></div>
+        <article class="pageDescription">
+            <div>
+                <h1>I CREATE TIMELAPSES</h1>
+                <h2>Scroll to discover</h2>
+            </div>
+        </article>
+        <article class="projectContent">
+            <div>
+                <h1>Hopetoun</h1>
+                <h2>Short sundown timelapse</h2>
+                <div class="video-wrapper">
+                    <div class="video-viewport" aria-live="polite" style="max-width: 100%; text-align: center; overflow: hidden; position: relative; height: 350px;">
+                        <video id="video1" controls width="640" height="480">
+                            <source src="images/Hopetoun.webm">
+                            <source src="images/Hopetoun_2xSlow.mp4">
+                            Your browser does not support the <code>video</code> element.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="info">
+        <div class="bgSection" style="background-image: url('images/tekapo-small.jpg');"></div>
+        <article class="pageDescription">
+            <div>
+                <h1>
+                    <a href="mailto: cornelia.schulz.photography@gmail.com" target="_blank"><span class="long">cornelia.schulz. photography @gmail.com</span></a>
+                </h1>
+                <h2>Scroll for more info</h2>
+            </div>
+        </article>
+        <article class="plainText">
+            <p>
+                Cornelia Schulz
+                <br />
+                Auckland, New Zealand
+            </p>
+        </article>
+        <article class="plainText">
+            <p>
+                Web Development
+                <br />
+                Cornelia Schulz
+                <br />
+                <a href="http://www.cornelia-schulz.info/" target="_blank"><span class="long">www.cornelia-schulz.info</span></a>
+            </p>
+        </article>
+    </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -102,12 +102,14 @@ body > nav > a {
 body > nav.home {
     top: 2px;
     left: 50%;
+    -ms-transform: translate3d(-50%, 50%, 0);
     -webkit-transform: translate3d(-50%, 50%, 0);
             transform: translate3d(-50%, 50%, 0); }
 
 body > nav.photography {
     top: 50%;
     left: 0;
+    -ms-transform: translate3d(calc(-50% + 20px), calc(+50% - 20px), 0) rotate(-90deg);
     -webkit-transform: translate3d(calc(-50% + 20px), calc(+50% - 20px), 0) rotate(-90deg);
             transform: translate3d(calc(-50% + 20px), calc(+50% - 20px), 0) rotate(-90deg);
 }
@@ -115,6 +117,7 @@ body > nav.photography {
 body > nav.timelapse {
     top: 50%;
     right: 0;
+    -ms-transform: translate3d(calc(+50% - 20px), calc(+50% - 20px), 0) rotate(90deg);
     -webkit-transform: translate3d(calc(+50% - 20px), calc(+50% - 20px), 0) rotate(90deg);
             transform: translate3d(calc(+50% - 20px), calc(+50% - 20px), 0) rotate(90deg);
 }
@@ -122,6 +125,7 @@ body > nav.timelapse {
 body > nav.info {
     bottom: 20px;
     left: 50%;
+    -ms-transform: translate3d(-50%, 50%, 0);
     -webkit-transform: translate3d(-50%, 50%, 0);
     transform: translate3d(-50%, 50%, 0);
 }
@@ -234,6 +238,15 @@ article{
     display: inline-block;
 }
 
+.icon{
+
+}
+
+.social-media-icon{
+    width: 50px;
+    display: inline;
+}
+
 @media (max-width: 640px) {
 video {
     width: 300px;
@@ -242,3 +255,4 @@ video {
     font-weight: 700;
 }
 }
+
